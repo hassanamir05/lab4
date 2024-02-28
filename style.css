@@ -1,0 +1,194 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  color: grey;
+}
+
+.sidebar {
+  width: 20%;
+  padding: 20px;
+  margin-right: 20px;
+  border-radius: 16px;
+  background-color: #eee;
+  margin-bottom: 10px;
+  border: solid 0.5px grey;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  border-radius: 16px;
+  background-color: #eee;
+  border: solid 0.5px grey;
+}
+
+h1 {
+  font-size: 22px;
+  margin-bottom: 0px;
+}
+
+h3,
+h2,
+label {
+  margin-bottom: 2px;
+}
+
+p.tagline {
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.section h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+.checkbox-buttons {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.checkbox-buttons input[type="checkbox"] {
+  display: none;
+  width: 20px;
+  height: 20px;
+}
+
+.checkbox-buttons label {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 5px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.checkbox-buttons input[type="checkbox"]:checked + label {
+  background-color: grey;
+  color: #fff;
+}
+
+.checkbox-buttons label:hover {
+  border-color: grey;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.sidebar input[type="text"],
+.sidebar input[type="email"],
+.main-content input[type="text"],
+.main-content input[type="email"],
+.main-content {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.sidebar input[type="text"]:hover,
+.sidebar input[type="email"]:hover,
+.main-content input[type="text"]:hover,
+.main-content input[type="email"]:hover,
+.main-content textarea:hover {
+  border-color: grey;
+}
+
+.sidebar input[type="text"]:focus,
+.sidebar input[type="email"]:focus,
+.main-content input[type="text"]:focus,
+.main-content input[type="email"]:focus,
+.main-content textarea:focus {
+  outline: none;
+  border-color: grey;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+#bio {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+  height: 100px;
+}
+
+#bio:hover {
+  border-color: grey;
+}
+
+#bio:focus {
+  outline: none;
+  border-color: grey;
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+}
+
+.profile {
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  display: block;
+  margin: 0 auto;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.links button {
+  height: 50px;
+  width: 50px;
+  border-radius: 12px;
+  border: solid 0.2px grey;
+  margin: 0 5px;
+}
+
+.links button a {
+  text-align: none;
+  color: grey;
+}
+
+.links button a i {
+  font-size: 25px;
+}
+
+.links button:hover {
+  box-shadow: 2px 2px 2px grey;
+}
+
+@media (max-width: 768px) {
+  .sidebar,
+  .main-content {
+    width: 100%;
+    margin-right: 0;
+  }
+  .profile {
+    height: 100px;
+    width: 100px;
+  }
+}
